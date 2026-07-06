@@ -10,7 +10,6 @@ WITH TRIPS AS(
 
     FROM {{ source('demo_project', 'BIKE') }}
     WHERE RIDE_ID != 'ride_id'
-    LIMIT 10
 )
 
 SELECT *
